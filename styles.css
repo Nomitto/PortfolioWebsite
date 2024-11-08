@@ -276,3 +276,7 @@ h1 {
 .project-button:hover {
   color: #0f78d1; /* Darken color on hover */
 }
+
+.github-box h3.blue-color {
+  color: rgb(124, 194, 255) !important;
+}

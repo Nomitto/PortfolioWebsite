@@ -1,0 +1,278 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #0d1117;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.city {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.section-title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-subtitle {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 0;
+  font-weight: 700;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+.small-text-container {
+  font-size: 0.875rem;
+  margin-top: 3rem;
+}
+
+.small-text-container > * + * {
+  margin-top: 1.5rem;
+}
+
+.bordered-box {
+  border-left: 4px solid #ffffff;
+  padding-left: 1rem;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.tag:last-child {
+  margin-right: 0;
+}
+
+.profile-photo {
+  width: 330px; /* Set the width to make it large */
+  height: 330px; /* Set equal height for a square */
+  border-radius: 20px; /* Rounded corners */
+  object-fit: cover; /* Crop the image to fit the square */
+  margin-top: 1rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); /* Optional shadow for added depth */
+}
+
+.school-highlight {
+  color: rgb(124, 194, 255); /* Color that was originally set inline */
+}
+.name-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem; /* Space between the name and the line */
+  padding-bottom: 0.5rem; /* Adds some space between text and line */
+  border-bottom: 3px solid #ffffff; /* The line under the name */
+  display: inline-block; /* Optional: Keeps the line length the same as the name */
+}
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-right: 1rem;
+  background-color: #1f2937; /* Dark button color */
+  color: #ffffff; /* White text */
+  border-radius: 5px; /* Slightly rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.link-button i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.link-button:hover {
+  background-color: #374151; /* Lighter color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Remove Navbar */
+.navbar {
+  display: none;
+}
+
+/* Section Button Styling */
+.section-button {
+  display: block;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.section-button:hover {
+  color: #1e90ff; /* Highlight color on hover */
+}
+
+/* Scrollable Content Styling */
+.scroll-container {
+  overflow-y: auto; /* Enable scrolling */
+  padding: 2rem;
+  height: 100vh; /* Full height for the container */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.scroll-container section {
+  margin-bottom: 4rem; /* Space between sections */
+}
+.github-box {
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  color: #c9d1d9;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.github-box:hover {
+  border-color: #1e90ff; /* Change border color to blue on hover */
+  box-shadow: 0 0 20px #1e90ff; /* Add blue glow around the box */
+}
+
+.github-box h2 {
+  color: #58a6ff; /* Lighter color for headings, similar to link colors on GitHub */
+  margin-bottom: 1rem;
+}
+
+.github-box p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap; /* This allows the tags to wrap onto the next line */
+  gap: 0.5rem; /* Adds spacing between the tags */
+  margin-top: 1rem; /* Adds margin at the top for spacing from the list above */
+}
+
+.tech-tag {
+  background-color: #1f2937; /* Equivalent to bg-gray-800 */
+  padding: 0.25rem 0.75rem; /* Equivalent to py-1 px-3 */
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  border-radius: 0.25rem; /* Equivalent to rounded */
+  color: #ffffff; /* Text color to ensure visibility */
+  white-space: nowrap; /* Prevents text inside each tag from wrapping */
+}
+
+.tech-tag:last-child {
+  margin-right: 0; /* Remove margin from the last tag */
+}
+
+.footer-trademark {
+  margin-left: 3rem;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280; /* Light gray color */
+  opacity: 0.8; /* Slightly transparent */
+}
+
+.project-button {
+  background-color: transparent; /* No background to let the icon stand out */
+  color: #1e90ff; /* Blue color for the icon */
+  border: none; /* Remove border */
+  padding: 0.5rem; /* Padding to make the button easy to click */
+  margin-top: 0.5rem; /* Space above the button */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: color 0.3s ease;
+  font-size: 1.5rem; /* Make the icon larger */
+}
+
+.project-button:hover {
+  color: #0f78d1; /* Darken color on hover */
+}

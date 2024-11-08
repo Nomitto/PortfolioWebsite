@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Ho</title>
+    <!-- Link to external CSS and JS files -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div>
+          <h1 class="name-title">Simon Ho 🙌</h1>
+
+          <p class="subtitle">
+            Computer Science |
+            <span class="blue-color">Georgia Institute of Technology 🐝 </span>
+          </p>
+
+          <p class="city"></p>
+          <div class="profile-photo-container">
+            <img
+              src="whatamidoing.jpg"
+              alt="Profile Photo"
+              class="profile-photo"
+            />
+          </div>
+          <div class="section">
+            <button onclick="scrollToSection('about')" class="section-button">
+              ABOUT
+            </button>
+            <button
+              onclick="scrollToSection('experience')"
+              class="section-button"
+            >
+              EXPERIENCE
+            </button>
+            <button
+              onclick="scrollToSection('projects')"
+              class="section-button"
+            >
+              PROJECTS
+            </button>
+            <button onclick="scrollToSection('contact')" class="section-button">
+              CONTACT
+            </button>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/Nomitto"
+              target="_blank"
+              class="link-button github-button"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/simon-ho-gatech/"
+              target="_blank"
+              class="link-button linkedin-button"
+            >
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a
+              href="mailto:shonomis6788@gmail.com"
+              class="link-button email-button"
+            >
+              <i class="fas fa-envelope"></i> Email
+            </a>
+            <a
+              href="https://www.instagram.com/boredsimon/profilecard/?igsh=MWZsd3NrNWVzbDZqaw=="
+              target="_blank"
+              class="link-button instagram-button"
+            >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+        <div class="space-y-6 scroll-container">
+          <section id="about">
+            <div class="github-box">
+              <h2>About 👋</h2>
+              <div class="bordered-box">
+                <p>
+                  Hey! I'm a
+                  <span class="blue-color">New Yorker</span> and a current
+                  <span class="blue-color">undergraduate</span> student at
+                  Georgia Tech studying computer science with
+                  <span class="blue-color">threads </span> Systems &
+                  Architecture and Info Internetworks. I'm
+                  <span class="blue-color">interested</span> in web development,
+                  databases, low-level programming, system architecture, and
+                  exploring new technologies! My
+                  <span class="blue-color">hobbies</span> are dog-walking,
+                  watching my aquarium, playing video games in free-time, and
+                  interacting with others.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="experience">
+            <div class="github-box">
+              <h2>Experience 👨‍💻</h2>
+              <div class="bordered-box">
+                <p class="text-gray-500">September 2023 — May 2024</p>
+                <h3><span class="blue-color">Peer Mentor</span></h3>
+                <li>
+                  Mentored peers in Object-Oriented Programming concepts and
+                  fundamentals such as big O-notation, search and sort
+                  algorithms, and recursion.
+                </li>
+                <li>
+                  Assisted students in understanding and implementing advanced
+                  data structures such as lists, stacks, queues, and binary
+                  search trees.
+                </li>
+                <li>
+                  Provided guidance on using interfaces, generics, JUnit
+                  testing, and exception handling to write robust and
+                  maintainable code.
+                </li>
+              </div>
+            </div>
+          </section>
+          <section id="projects">
+            <div class="github-box">
+              <h2>Projects 🛠️</h2>
+
+              <div class="bordered-box">
+                <p class="text-gray-500">November 2024</p>
+                <h3 class="blue-color">This Website</h3>
+                <ul>
+                  <li style="margin-bottom: 1rem">
+                    This portfolio website was made with vanilla HTML, CSS, and
+                    Javascript!
+                  </li>
+                  <li style="margin-bottom: 1rem">
+                    Hosts my social media links, projects, and experience.
+                  </li>
+                </ul>
+                <div style="margin-bottom: 3rem" class="tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">HTML</span>
+                </div>
+              </div>
+
+              <div class="bordered-box">
+                <p class="text-gray-500">September 2024</p>
+                <h3 class="blue-color">
+                  GroupSync
+                  <button
+                    onclick="window.open('https://github.com/Nomitto/GroupSyncHackathon', '_blank')"
+                    class="project-button"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </h3>
+
+                <ul>
+                  <li>
+                    Created a group calendar web application at HackGT 2024
+                    using React, Node.js, and Firebase, enabling users to share
+                    availability and form a heatmap of available times for
+                    friend meetups.
+                  </li>
+                  <li style="margin-bottom: 1rem">
+                    Utilized Google Calendar API for fetching user availability
+                    with FreeBusy query.
+                  </li>
+                  <div style="margin-bottom: 3rem" class="tech-tags">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Git</span>
+                  </div>
+                </ul>
+              </div>
+
+              <div class="bordered-box">
+                <p class="text-gray-500">October 2023</p>
+                <h3 class="blue-color">
+                  Animal Of The Day
+                  <button
+                    onclick="window.open('https://simonho.io/animal-of-the-day', '_blank')"
+                    class="project-button"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </h3>
+                <ul>
+                  <li style="margin-bottom: 1rem">
+                    Built a full-stack web application using Flask and
+                    JavaScript that fetches and displays information about
+                    different animals dynamically using the OpenAI GPT 3.5 API.
+                  </li>
+                  <li style="margin-bottom: 1rem">
+                    Deployed completed web app to a DigitalOcean VM.
+                  </li>
+                  <div style="margin-bottom: 3rem" class="tech-tags">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Web-Scraping</span>
+                  </div>
+                </ul>
+              </div>
+
+              <div class="bordered-box">
+                <p class="text-gray-500">Feburary 2024</p>
+                <h3 class="blue-color">Red-Black-Tree Song Searcher</h3>
+                <ul>
+                  <li style="margin-bottom: 1rem">
+                    Developed a full-stack song application with a partner,
+                    implementing a Red-Black Tree algorithm for efficient song
+                    searching.
+                  </li>
+                  <li style="margin-bottom: 1rem">
+                    Built backend logic to read CSV files and implemented
+                    methods to filter songs based on user input.
+                  </li>
+                </ul>
+                <div style="margin-bottom: 3rem" class="tech-tags">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Git</span>
+                  <span class="tech-tag">Bash</span>
+                </div>
+              </div>
+
+              <div class="bordered-box">
+                <p class="text-gray-500">November 2023</p>
+                <h3 class="blue-color">
+                  Complexify AI Art Editor
+                  <button
+                    onclick="window.open('https://github.com/Sheeper23/complexify', '_blank')"
+                    class="project-button"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </h3>
+                <ul>
+                  <li style="margin-bottom: 1rem">
+                    Developed a full-stack web application using React and
+                    Tailwind, with a Flask backend at MadHacks 2023.
+                  </li>
+                  <li style="margin-bottom: 1rem">
+                    Integrated OpenAI DALL-E to transform user sketches into
+                    sophisticated drawings.
+                  </li>
+                </ul>
+                <div style="margin-bottom: 3rem" class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+              </div>
+
+              <div class="bordered-box">
+                <p class="text-gray-500">September 2023</p>
+                <h3 class="blue-color">
+                  To-Do List
+                  <button
+                    onclick="window.open('https://www.simonho.io/to-do/', '_blank')"
+                    class="project-button"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </h3>
+                <ul>
+                  <li style="margin-bottom: 1rem">
+                    Built client-sided, Front End To-Do application including
+                    features such as functioning checkboxes and deletion of
+                    tasks with HTML, JS, and CSS
+                  </li>
+                  <li style="margin-bottom: 1rem">
+                    Added engaging animations for query text boxes and item
+                    hover effects
+                  </li>
+                </ul>
+                <div style="margin-bottom: 3rem" class="tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contact">
+            <h2 class="blue-color">Contact 📬</h2>
+            <p>
+              You can contact me by clicking any of the social media icons on
+              the left! Or feel free to reachout on
+              <span class="blue-color">Discord </span> at
+              <span class="blue-color">BoredSimon </span>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-trademark">
+      <p>&copy; 2024 Simon Ho. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
